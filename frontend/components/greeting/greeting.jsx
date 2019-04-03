@@ -16,7 +16,10 @@ const Greeting = ({currentUser, logout}) =>{
   const personalGreeting = () => {
     return(
       <div>
-        <p>{currentUser.first_name}</p>
+        {/* <p>{currentUser.first_name}</p> */}
+        <button onClick={logout}>
+          Sign Out
+        </button>
       </div>
     )
   }
