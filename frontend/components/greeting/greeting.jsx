@@ -2,21 +2,21 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 
 const Greeting = ({currentUser, logout}) =>{
-  const sessionLinks = () => {
-    return(
-      <nav>
-        <div>
-          <div>
-            <Link to="/login">Sign In</Link>
-            <Link to="/create">Create An Account</Link>
-          </div>
-          <div>
+  // const sessionLinks = () => {
+  //   return(
+      
+  //       <div>
+  //         <div>
+  //           <button><Link to="/login">Sign In</Link></button>
+  //           <button><Link to="/create">Create An Account</Link></button>
+  //         </div>
+  //         <div>
 
-          </div>
-        </div>
-      </nav>
-    )
-  }
+  //         </div>
+  //       </div>
+     
+  //   )
+  // }
 
   //put profile component in here
 
@@ -32,7 +32,7 @@ const Greeting = ({currentUser, logout}) =>{
     )
   }
   
-  return (currentUser ? personalGreeting(currentUser, logout) : sessionLinks())
+  return (currentUser ? personalGreeting(currentUser, logout) : null )
 }
 
 export default Greeting

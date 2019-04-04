@@ -1,6 +1,7 @@
 import React from 'react';
 import { withRouter, Link } from 'react-router-dom';
 
+
 class SessionForm extends React.Component{
   constructor(props){
     super(props);
@@ -32,7 +33,38 @@ class SessionForm extends React.Component{
   }
 
   render(){
+    if (this.props.formType === 'signup'){
+      return(
+      <div>
+        <form action="">
+          <input type="text" name="email" className="" placeholder="email"/>
+          <input type="text" name="username" className="" placeholder="username" />
+          <input type="text" name="first_name" className="" placeholder="first name" />
+          <input type="text" name="last_name" className="" placeholder="last name" />
+          <input type="password" name="password" className="" placeholder="password" />
 
+          <input type="submit" value="signup" id=""/>
+        </form>
+      </div>
+      )
+    }  else {
+      this.props.formType === 'signup'
+      return(
+      <div>
+        <form action="">
+          <input type="text" name="email" className="" placeholder="email" />
+          <input type="text" name="username" className="" placeholder="username" />
+          <input type="text" name="first_name" className="" placeholder="first name" />
+          <input type="text" name="last_name" className="" placeholder="last name" />
+          <input type="password" name="password" className="" placeholder="password" />
+
+          <input type="submit" value="signin" id="" />
+        </form>
+      </div>
+      )
+    }
   }
 
 }
+
+export default SessionForm;
