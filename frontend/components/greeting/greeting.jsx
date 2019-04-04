@@ -11,18 +11,20 @@ const Greeting = ({currentUser, logout}) =>{
             <Link to="/create">Create An Account</Link>
           </div>
           <div>
-            
+
           </div>
         </div>
       </nav>
     )
   }
 
+  //put profile component in here
 
   const personalGreeting = () => {
     return(
       <div>
         {/* <p>{currentUser.first_name}</p> */}
+      
         <button onClick={logout}>
           Sign Out
         </button>
