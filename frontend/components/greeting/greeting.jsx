@@ -5,9 +5,15 @@ const Greeting = ({currentUser, logout}) =>{
   const sessionLinks = () => {
     return(
       <nav>
-        <Link to="/login">Sign In</Link>
-        <Link to="/create">Create An Account</Link>
-
+        <div>
+          <div>
+            <Link to="/login">Sign In</Link>
+            <Link to="/create">Create An Account</Link>
+          </div>
+          <div>
+            
+          </div>
+        </div>
       </nav>
     )
   }
