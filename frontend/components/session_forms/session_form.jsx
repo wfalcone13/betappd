@@ -48,14 +48,11 @@ class SessionForm extends React.Component{
       </div>
       )
     }  else {
-      this.props.formType === 'signup'
+      this.props.formType === 'login'
       return(
       <div>
         <form action="">
-          <input type="text" name="email" className="" placeholder="email" />
           <input type="text" name="username" className="" placeholder="username" />
-          <input type="text" name="first_name" className="" placeholder="first name" />
-          <input type="text" name="last_name" className="" placeholder="last name" />
           <input type="password" name="password" className="" placeholder="password" />
 
           <input type="submit" value="signin" id="" />

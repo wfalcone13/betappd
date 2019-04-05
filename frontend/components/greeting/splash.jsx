@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 ///Show this for "/"
 
 
-//show sign out on home!
+//show sign out on home! must be logged in
 
 
 class SessionLinks extends React.Component{
@@ -15,7 +15,7 @@ class SessionLinks extends React.Component{
   }
 
 render(){
-  if(this.state === null) {
+   {
   return (
 
     <div>
@@ -29,19 +29,19 @@ render(){
     </div>
 
   ) 
-  } else {
-    return null
-  }
+  
   }
 }
-
-const mapStateToProps = state =>{
-  debugger
-  return{
-  user: state.session.id
-  }
 }
 
+// const mapStateToProps = state =>{
+//   return{
+//   user: state.session.id
+//   }
+// }
 
-//export default SessionLinks
-export default connect(mapStateToProps)(SessionLinks)
+
+// //export default SessionLinks
+// export default connect(mapStateToProps)(SessionLinks)
+
+export default SessionLinks
