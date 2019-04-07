@@ -26,9 +26,13 @@ class SessionForm extends React.Component{
     e.preventDefault();
     const user = Object.assign({}, this.state);
     if(this.props.formType === 'signup'){
-      this.props.signup(user)
+      this.props.signup(user).then(() => {
+        this.props.history.push(`home`)
+      })
     } else {
-      this.props.login(user)
+      this.props.login(user).then(() => {
+        this.props.history.push(`home`)
+      })
     }
   }
 
@@ -36,14 +40,14 @@ class SessionForm extends React.Component{
     if (this.props.formType === 'signup'){
       return(
       <div>
-        <form action="">
-          <input type="text" name="email" className="" placeholder="email"/>
-          <input type="text" name="username" className="" placeholder="username" />
-          <input type="text" name="first_name" className="" placeholder="first name" />
-          <input type="text" name="last_name" className="" placeholder="last name" />
-          <input type="password" name="password" className="" placeholder="password" />
+        <form onSubmit={this.handleSubmit}>
+            <input type="text" className="" placeholder="email" value={this.state.email} onChange={this.update('email')}/>
+            <input type="text" className="" placeholder="username" value={this.state.username} onChange={this.update('username')}/>
+            <input type="text" className="" placeholder="first name" value={this.state.first_name} onChange={this.update('first_name')}/>
+            <input type="text" className="" placeholder="last name" value={this.state.last_name} onChange={this.update('last_name')} />
+            <input type="password" className="" placeholder="password" value={this.state.password} onChange={this.update('password')}/>
 
-          <input type="submit" value="signup" id=""/>
+            <input type="submit" value={this.props.formType} value="Create Account" id=""/>
         </form>
       </div>
       )
@@ -51,11 +55,11 @@ class SessionForm extends React.Component{
       this.props.formType === 'login'
       return(
       <div>
-        <form action="">
-          <input type="text" name="username" className="" placeholder="username" />
-          <input type="password" name="password" className="" placeholder="password" />
+        <form onSubmit={this.handleSubmit}>
+            <input type="text" name="username" className="" placeholder="username" value={this.state.username} onChange={this.update('username')}/>
+            <input type="password" className="" placeholder="password" value={this.state.password} onChange={this.update('password')}/>
 
-          <input type="submit" value="signin" id="" />
+          <input type="submit" value={this.props.formType} value="signin" id="" />
         </form>
       </div>
       )
@@ -64,4 +68,4 @@ class SessionForm extends React.Component{
 
 }
 
-export default SessionForm;
+export default withRouter(SessionForm);
