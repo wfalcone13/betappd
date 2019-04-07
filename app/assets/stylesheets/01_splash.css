@@ -1,0 +1,9 @@
+.main-div{
+    width: auto;
+    height: 800px;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url("/Users/william_falcone/Desktop/new_fullstack/betappd/app/assets/images/betapped.jpg");
+      background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+}

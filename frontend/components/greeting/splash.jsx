@@ -18,7 +18,7 @@ render(){
    {
   return (
 
-    <div>
+    <div className="main-div">
       <div>
         <button><Link to="/login">Sign In</Link></button>
         <button><Link to="/create">Create An Account</Link></button>

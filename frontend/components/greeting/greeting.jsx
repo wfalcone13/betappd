@@ -30,7 +30,7 @@ class Greeting extends React.Component{
         {/* <p>{currentUser.first_name}</p> */}
       
         <button onClick={this.props.logout}>
-          Sign Out
+        <Link to="/">Sign Out</Link>
         </button>
       </div>
     )
