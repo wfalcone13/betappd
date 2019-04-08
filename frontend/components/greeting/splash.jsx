@@ -29,10 +29,16 @@ render(){
         </div>
         <div className="bottom-div">
           <div className='logo-div'>
-            <div className='beer-img'></div>
-            <h2 id="app-name">BETAPPD</h2>
-            <p id='app-line'> DRINK SOCIALLY</p>
-            <div id='line-below'></div>
+            <div className='logo-1'>
+              <div className='beer-img'></div>
+              <h2 id="app-name">BETAPPD</h2>
+              <p id='app-line'> DRINK SOCIALLY</p>
+              <div id='line-below'></div>
+            </div>
+            <div className='logo-2'>
+              <h2>Discover and share your 
+                favorite beer.</h2>
+            </div>
           </div>
           <div className='phone-img'>
           
