@@ -9,6 +9,12 @@
 
 }
 
+.bottom-div{
+  height: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+
 .sign-links{
   display: flex;
   justify-content: flex-end;
@@ -75,9 +81,52 @@
 
 
 .phone-img{
-  background-image: url("phone.jpg")
+  background-image: url("phone.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 200px;
+  height: 100%;
+  width: 46%;
 }
 
+.logo-div{
+    height: 100%;
+    width: 53%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.beer-img{
+  background-image: url("beer2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+      height: 24%;
+    width: 30%;
+}
+
+#app-name{
+  font-size: 47px;
+    color: white;
+    width: 37%;
+    font-family: ProximaNova,Helvetica,sans-serif;
+    font-weight: 700;
+}
+
+#app-line{
+  font-size: 13px;
+  color: white;
+  font-family: ProximaNova,Helvetica,sans-serif;
+  font-weight: 500;
+}
+
+#line-below{
+    background: #ffc000;
+    height: 4px;
+    margin: 20px 0;
+    width: 50px;
+}
 
 /* .link-login a{
   text-decoration: none;

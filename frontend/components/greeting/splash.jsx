@@ -27,9 +27,12 @@ render(){
         <Link to="/login" className='link-login'>SIGN IN</Link>
         <Link to="/create" className='link-create' >CREATE AN ACCOUNT</Link>
         </div>
-        <div>
-          <div>
-            <p1>placeholder</p1>
+        <div className="bottom-div">
+          <div className='logo-div'>
+            <div className='beer-img'></div>
+            <h2 id="app-name">BETAPPD</h2>
+            <p id='app-line'> DRINK SOCIALLY</p>
+            <div id='line-below'></div>
           </div>
           <div className='phone-img'>
           
