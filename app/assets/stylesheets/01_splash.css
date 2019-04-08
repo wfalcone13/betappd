@@ -1,9 +1,91 @@
 .main-div{
     width: auto;
     height: 800px;
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url("/Users/william_falcone/Desktop/new_fullstack/betappd/app/assets/images/betapped.jpg");
-      background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url("betapped.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+ 
 
 }
+
+.sign-links{
+  display: flex;
+  justify-content: flex-end;
+  height: 15%;
+  align-items: center;
+}
+
+.sign-links button{
+    margin-right: 10px;
+    height: 50px;
+    border-radius: 7px;
+    background-color: Transparent;
+    border-color: white;
+    font-size: 17px
+}
+
+.sign-links button:hover{
+  background-color: transparent;
+  color: black;
+}
+
+.link-create{
+  width: 210px;
+  height: 45px;
+  border: solid 2px white;
+  margin-right: 20px;
+  text-decoration: none;
+  font-size: 15px;
+  border-radius: 4px;
+  line-height: 47px;
+  color: white;
+  text-align: center;
+  font-family: 'ProximaNova','Helvetica',sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.link-create:hover{
+  background-color: white;
+  color: black;
+}
+
+
+.link-login{
+  width: 100px;
+  height: 45px;
+  border: solid 2px white;
+  margin-right: 16px;
+  text-decoration: none;
+  font-size: 15px;
+  border-radius: 4px;
+  line-height: 47px;
+  color: white;
+  text-align: center;
+  font-family: 'ProximaNova','Helvetica',sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.link-login:hover{
+  background-color: white;
+  color: black;
+}
+
+
+.phone-img{
+  background-image: url("phone.jpg")
+}
+
+
+/* .link-login a{
+  text-decoration: none;
+  color: white;
+  
+  
+}
+    .link-create a{
+      text-decoration: none;
+      color: white;
+    } */
